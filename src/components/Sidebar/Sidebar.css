@@ -1,0 +1,57 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #292929;
+  border: 2px solid black;
+  flex: 1;
+  border-radius: 0px 32px 32px 0px;
+  overflow: hidden;
+}
+
+.logo {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  color: #f7f9f9;
+  width: 100%;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.active {
+  list-style: none;
+  border: 2px solid red;
+  width: 100%;
+  padding: 1rem 3rem;
+  background: #f30050;
+}
+
+li {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 100%;
+  padding: 1rem 3rem;
+}
