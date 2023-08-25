@@ -24,6 +24,8 @@
   flex-direction: column;
   color: #f7f9f9;
   width: 100%;
+  flex: 1;
+  justify-content: space-between;
 }
 ul {
   display: flex;
@@ -54,4 +56,10 @@ li {
   text-align: left;
   width: 100%;
   padding: 1rem 3rem;
+}
+
+.social__icons {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
 }

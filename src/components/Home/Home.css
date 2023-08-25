@@ -3,6 +3,7 @@
   flex: 10;
   flex-direction: column;
   overflow: scroll;
+  height: 100vh;
 }
 
 .container::-webkit-scrollbar {
@@ -12,6 +13,10 @@
 .cards {
   display: flex;
   flex: 10;
+}
+
+input {
+  width: 100%;
 }
 
 .cards {
@@ -42,12 +47,20 @@
   }
 }
 
-/* Media query for screens wider than 1024px */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1402px) {
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1500px) {
   .card {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+*/
+
+/* Media query for screens wider than 1024px */
 
 .loader {
   display: flex;

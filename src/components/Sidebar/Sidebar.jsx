@@ -4,6 +4,11 @@ import logo from "../../assets/Vector.png";
 import logo2 from "../../assets/NFTify.svg";
 import logo3 from "../../assets/listlogo.png";
 import logo4 from "../../assets/listlogo2.png";
+import {
+  AiFillFacebook,
+  AiFillLinkedin,
+  AiFillTwitterSquare,
+} from "react-icons/ai";
 
 const Sidebar = () => {
   return (
@@ -23,6 +28,11 @@ const Sidebar = () => {
             Pair Address
           </li>
         </ul>
+        <div className="social__icons">
+          <AiFillFacebook size={24} color="red" />
+          <AiFillLinkedin size={24} color="red" />
+          <AiFillTwitterSquare size={24} color="red" />
+        </div>
       </div>
     </div>
   );
