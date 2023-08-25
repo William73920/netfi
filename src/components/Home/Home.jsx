@@ -11,8 +11,6 @@ const Home = ({ search }) => {
   const [err, setError] = useState(false);
 
   useEffect(() => {
-    // Define the API URL you want to fetch data from
-
     if (search) {
       const apiUrl = `https://api.dexscreener.com/latest/dex/search?q=${search}`;
       setLoading(true);
@@ -20,7 +18,6 @@ const Home = ({ search }) => {
       axios
         .get(apiUrl)
         .then((response) => {
-          // Set the fetched data in the state
           setData(response.data.pairs);
           setLoading(false);
           setError(false);
@@ -37,7 +34,6 @@ const Home = ({ search }) => {
       axios
         .get(apiUrl)
         .then((response) => {
-          // Set the fetched data in the state
           setData(response.data.pairs);
           setLoading(false);
           setError(false);
@@ -48,10 +44,6 @@ const Home = ({ search }) => {
           setLoading(false);
         });
     }
-
-    // Replace with your API URL
-
-    // Fetch data using Axios
   }, [search]);
 
   return (
@@ -79,20 +71,3 @@ const Home = ({ search }) => {
 };
 
 export default Home;
-
-// <div className="container">
-//       {loading ? (
-//         <div className="loader">Loading</div>
-//       ) : err ? (
-//         "Be more specific"
-//       ) : (
-//         <div className="cards">
-//           <div className="heading">Token Search Results</div>
-//           <div className="card">
-//             {data?.map((item) => (
-//               <Card data={item} />
-//             ))}
-//           </div>
-//         </div>
-//       )}
-//     </div>
